@@ -1,0 +1,129 @@
+:root {
+  --octo-bg-1: #f4f9ff;
+  --octo-bg-2: #edf7f1;
+  --octo-surface: #ffffff;
+  --octo-border: #d8e8db;
+  --octo-text: #203235;
+  --octo-muted: #4a6367;
+  --octo-primary: #0c8f63;
+  --octo-primary-strong: #0a6f4d;
+  --octo-accent: #156f9c;
+  --octo-row: #f6fbff;
+}
+
+body {
+  background: linear-gradient(135deg, var(--octo-bg-1), var(--octo-bg-2));
+  color: var(--octo-text);
+}
+
+.app-shell {
+  background: var(--octo-surface);
+  border: 1px solid var(--octo-border);
+  border-radius: 16px;
+  box-shadow: 0 12px 28px rgba(11, 40, 51, 0.08);
+}
+
+.app-header {
+  border-bottom: 1px solid #e6efee;
+  padding-bottom: 1rem;
+}
+
+.brand-row {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+}
+
+.app-brand-logo {
+  width: 58px;
+  height: 58px;
+  object-fit: contain;
+  border-radius: 12px;
+  background-color: #e4f8ef;
+  border: 1px solid #bde6d4;
+  padding: 6px;
+}
+
+.app-title {
+  color: var(--octo-primary-strong);
+  margin-top: 0.2rem;
+}
+
+.app-subtitle {
+  color: var(--octo-muted);
+}
+
+h2,
+.h4 {
+  color: var(--octo-accent);
+}
+
+.app-nav .octofit-nav-link {
+  color: var(--octo-primary);
+  border: 1px solid #9fd3bd;
+  background-color: #f4fffa;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.app-nav .octofit-nav-link:hover {
+  color: #ffffff;
+  background-color: var(--octo-primary);
+  border-color: var(--octo-primary);
+}
+
+.app-nav .octofit-nav-link.active {
+  color: #ffffff;
+  background-color: var(--octo-primary-strong);
+  border-color: var(--octo-primary-strong);
+}
+
+a {
+  color: var(--octo-accent);
+}
+
+a:hover {
+  color: #0c5b82;
+}
+
+.btn,
+button {
+  background-color: var(--octo-primary);
+  border-color: var(--octo-primary);
+  color: #ffffff;
+}
+
+.btn:hover,
+button:hover {
+  background-color: var(--octo-primary-strong);
+  border-color: var(--octo-primary-strong);
+  color: #ffffff;
+}
+
+.card {
+  border: 1px solid var(--octo-border) !important;
+  border-radius: 12px;
+}
+
+.table {
+  --bs-table-bg: #ffffff;
+  --bs-table-striped-bg: var(--octo-row);
+  --bs-table-color: var(--octo-text);
+  --bs-table-striped-color: var(--octo-text);
+  --bs-table-hover-bg: #eaf5f0;
+  --bs-table-hover-color: #163035;
+}
+
+.table thead th {
+  color: #ffffff;
+  background-color: var(--octo-accent);
+  border-bottom: 0;
+}
+
+.text-secondary {
+  color: var(--octo-muted) !important;
+}
+
+.text-danger {
+  color: #c52f3b !important;
+}
