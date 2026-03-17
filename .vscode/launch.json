@@ -5,7 +5,7 @@
       "name": "Launch Django Backend",
       "type": "python",
       "request": "launch",
-      "program": "${workspaceFolder}/octofit-tracker/backend/manage.py",
+      "program": "${workspaceFolder}/octofit-tracker/backend/octofit_tracker/manage.py",
       "args": ["runserver", "0.0.0.0:8000"],
       "django": true,
       "justMyCode": true,
